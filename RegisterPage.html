@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | ViaPark</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="loadUserDummy()">
+    <header>
+        <div class="head_nav">
+            <span><b>Via</b><i>Park</i></span>
+            <ul class="main_nav">
+                <li><a href="LoginPage.html">LOGIN</a></li>
+                <li class="is_active"><a href="RegisterPage.html">REGISTER</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="login_content">
+        <div class="login_background">
+            <form action="LoginPage.html">
+                <input type="text" id="tfName" placeholder="Input Your Name"> <br>
+                <input type="text" id="tfUsername" placeholder="Input Your Username"> <br>
+                <input type="password" id="tfPassword" placeholder="Input Your Password"> <br>
+                <input type="text" id="tfEmail" placeholder="Input Your Email"> <br>
+                <div class="right_form">
+                    <label>Your Gender :</label><br>
+                    &nbsp; &nbsp; &nbsp;<label style="color: white;"><input type="radio" name="gender" id="rbMale"> Male</label> <br>
+                    &nbsp; &nbsp; &nbsp;<label style="color: white;"><input type="radio" name="gender" id="rbFemale"> Female</label> <br>
+                    <label>Your Date of Birth :</label><br>
+                    <input type="date" id="dobPicker">
+                </div>
+                <div style="color: red;" id="errMsg"> &nbsp;
+                </div>
+                <input type="button" value="REGISTER" onclick="val_insertUser()">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <br>
+        &copy; 2020 DEVIA LIANY LTD. All Rights Reserved.
+        <br>
+        Terms of Service | Privacy Policy
+        <br> &nbsp;
+    </footer>
+</body>
+</html>

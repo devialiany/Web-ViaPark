@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating | ViaPark</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="loadDataRate()">
+    <header>
+        <div class="head_nav">
+            <span><b>Via</b><i>Park</i></span>
+            <ul class="main_nav">
+                <li><a href="DashboardPage.html">DASHBOARD</a></li>
+                <li><a href="ForumPage.html">FORUM</a></li>
+                <li><a href="FeedbackPage.html">FEEDBACK</a></li>
+                <li class="is_active"><a href="RatingPage.html">RATING</a></li>
+                <li><a onclick="logout()">LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="forum_content">
+        <marquee id="usernameActiveRt" style="text-align: left; margin-bottom: 5%; color: thistle;"></marquee>
+        <span>RATING</span><br>
+        <span>Share your rating to improve our quality service!</span>
+        <div class="forum_add">
+            <label>Your rating about our services :</label> <br>
+            <div>
+                <label><input type="radio" name="rate" id="rate1"> <span class="rateFill"> ★<span class="rateEmpty">★★★★</span></span>&nbsp; (Give 1 Star)</label><br>
+                <label><input type="radio" name="rate" id="rate2"> <span class="rateFill"> ★★<span class="rateEmpty">★★★</span></span>&nbsp; (Give 2 Star)</label><br>
+                <label><input type="radio" name="rate" id="rate3"> <span class="rateFill"> ★★★<span class="rateEmpty">★★</span></span>&nbsp; (Give 3 Star)</label><br>
+                <label><input type="radio" name="rate" id="rate4"> <span class="rateFill"> ★★★★<span class="rateEmpty">★</span></span>&nbsp; (Give 4 Star)</label><br>
+                <label><input type="radio" name="rate" id="rate5"> <span class="rateFill"> ★★★★★<span class="rateEmpty"></span></span>&nbsp; (Give 5 Star)</label><br>
+            </div>
+            <div style="text-align: right;">
+                <input type="button" value="ADD RATING" onclick="val_insertRate()"> <br>
+                <div style="color: red;" id="errMsgFd"> &nbsp;</div>
+            </div>
+            <div id="rate_data">
+                <div class="rate_dataDetail">
+                    <div style="text-align: right;"><label>datetime</label></div>
+                    <label>From: </label> <span>username</span><br>
+                    <p>content desc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        &copy; 2020 DEVIA LIANY LTD. All Rights Reserved.
+        <br>
+        Terms of Service | Privacy Policy
+        <br> &nbsp;
+    </footer>
+</body>
+</html>

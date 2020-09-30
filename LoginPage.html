@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ViaPark</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="loadUserDummy()">
+    <header>
+        <div class="head_nav">
+            <span><b>Via</b><i>Park</i></span>
+            <ul class="main_nav">
+                <li class="is_active"><a href="LoginPage.html">LOGIN</a></li>
+                <li><a href="RegisterPage.html">REGISTER</a></li>
+                <!-- <li><a href="ForumPage.html">FORUM</a></li>
+                <li><a href="FeedbackPage.html">FEEDBACK</a></li>
+                <li><a href="RatingPage.html">RATING</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <div class="login_content">
+        <marquee behavior="" direction="" style="color: violet; font-size: 15px;">If you don't have an account. Please create an account first!</marquee>
+        <div class="login_background">
+            <form action="DashboardPage.html">
+                <input type="text" id="tfUsernameLog" placeholder="Input Your Username"> <br>
+                <input type="password" id="tfPasswordLog" placeholder="Input Your Password"> <br>
+                <div style="color: red;" id="errMsgLog"> &nbsp;
+                </div>
+                <input type="button" value="LOGIN" onclick="login()">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <br>
+        &copy; 2020 DEVIA LIANY LTD. All Rights Reserved.
+        <br>
+        Terms of Service | Privacy Policy
+        <br> &nbsp;
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | ViaPark</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="loadDataFeed()">
+    <header>
+        <div class="head_nav">
+            <span><b>Via</b><i>Park</i></span>
+            <ul class="main_nav">
+                <li><a href="DashboardPage.html">DASHBOARD</a></li>
+                <li><a href="ForumPage.html">FORUM</a></li>
+                <li class="is_active"><a href="FeedbackPage.html">FEEDBACK</a></li>
+                <li><a href="RatingPage.html">RATING</a></li>
+                <li><a onclick="logout()">LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="forum_content">
+        <marquee id="usernameActiveFd" style="text-align: left; margin-bottom: 5%; color: thistle;"></marquee>
+        <span>FEEDBACK</span><br>
+        <span>Share your experiences for better our services!</span>
+        <div class="forum_add">
+            <label>Your experience feedback about our services :</label> <br>
+            <textarea id="tafeed" cols="30" rows="6"></textarea>
+            <div>
+                <input type="button" value="Good Service. " onclick="feedA()">
+                <input type="button" value="Friendly Waiter. " onclick="feedB()">
+                <input type="button" value="Responsive Web. " onclick="feedC()">
+                <input type="button" value="Fast Server. " onclick="feedD()">
+                <input type="button" value="Affordable Prices. " onclick="feedE()">
+            </div>
+            <div style="text-align: right;">
+                <input type="button" value="ADD FEEDBACK" onclick="val_insertFeed()"> <br>
+                <div style="color: red;" id="errMsgFd"> &nbsp;</div>
+            </div>
+            <div id="feed_data">
+                <div class="feed_dataDetail">
+                    <div style="text-align: right;"><label>datetime</label></div>
+                    <label>From: </label> <span>username</span><br>
+                    <p>content desc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        &copy; 2020 DEVIA LIANY LTD. All Rights Reserved.
+        <br>
+        Terms of Service | Privacy Policy
+        <br> &nbsp;
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* Tempalete Structure of Web */
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+}
+
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0,0,0,0.5)), url(assets/main-background2.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.head_nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* position: fixed; */
+	color:  white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+    width: 100%;
+	/* padding: 10px 30px; */
+}
+
+.head_nav span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    padding: 1% 5%;
+}
+
+.head_nav span b{
+    font-family: cursive;
+    font-weight: 900;
+    color: violet;
+}
+
+.main_nav{
+	display: flex;
+	list-style: none;
+	padding: 0px 35px;
+	color: white;
+}
+
+.main_nav li{
+    padding: 20px 20px;
+}
+
+.main_nav a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 25px;
+}
+
+.main_nav li.is_active a{
+	/* border: 1px solid white; */
+    border-radius: 10px;
+    color: violet;
+}
+
+.main_nav li a:hover{
+    /* border: none; */
+	border-bottom: 1px solid violet;
+	color:violet;
+	border-radius: 10px;
+    /* background-color: white; */
+    
+}
+
+footer{
+	background: black;
+	text-align: center;
+	color: whitesmoke;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	padding: 1%;
+}
+
+footer span{
+	font-family: fantasy;
+	font-size: 36px;
+	color: black;
+}
+
+input[type=text]{
+    width: 100%;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+}
+
+input[type=text]:focus{
+    border-color: violet;
+    box-shadow: 0 0 10px 0  violet;
+}
+
+input[type=password]{
+    width: 100%;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+}
+
+input[type=password]:focus{
+    border-color: violet;
+    box-shadow: 0 0 10px 0  violet;
+}
+
+input[type=button]{
+    width: 30%;
+    border-radius: 4px;
+    margin: 8px 0;
+    width: 200px;
+    padding: 8px;
+    transition: .3s;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+    background-color: violet;
+    color: white;
+}
+
+input[type=button]:hover{
+    box-shadow: 0 0 10px 0  violet;
+}
+
+input[type=date]{
+    width: 100%;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 16px;
+}
+
+input[type=date]:focus{
+    border-color: violet;
+    box-shadow: 0 0 10px 0  violet;
+}
+/* DashboardPage Style */
+.db_content{
+    padding: 5% 5%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: violet;
+	text-align: center;
+	line-height: 40px;
+    font-size: 30px;
+}
+#db_background{
+    padding: 2% 15%;
+    background: linear-gradient(rgba(255, 243, 243, 0.3),rgba(0,0,0,0.3));
+    font-size: 22px;
+    text-align: left;
+    color: violet;
+}
+/* LoginPage Style */
+.login_content{
+    padding: 5% 35%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: black;
+	text-align: center;
+	line-height: 40px;
+    font-size: 30px;
+}
+
+.login_background{
+    background: linear-gradient(rgba(255, 243, 243, 0.3),rgba(0,0,0,0.3));
+	padding: 8% 10%;
+	border-radius: 30px;
+	align-content: center;
+	text-align: center;
+	font-size: 14px;
+}
+/* RegisterPage Style */
+.right_form{
+    text-align: left;
+    color: violet;
+    padding: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* ForumPage Style */
+.forum_content{
+    padding: 5% 5%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: violet;
+	text-align: center;
+	line-height: 40px;
+    font-size: 30px;
+}
+
+.forum_add{
+    padding: 2% 8%;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    border: 2px solid #aaaaaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	resize: vertical;
+	font-size: 15px;
+}
+
+.forum_dataDetail{
+    padding: 2% 5%;
+    background: linear-gradient(rgba(255, 243, 243, 0.3),rgba(0,0,0,0.3));
+    font-size: 22px;
+    text-align: left;
+    color: violet;
+}
+
+.forum_dataDetail span{
+    color: white;
+}
+
+.forum_dataDetail p{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#forum_reply{
+    padding: 2% 5%;
+    background: linear-gradient(rgba(255, 243, 243, 0.3),rgba(0,0,0,0.3));
+}
+/* FeedbackPage Style */
+.feed_dataDetail{
+    padding: 2% 5%;
+    background: linear-gradient(rgba(255, 243, 243, 0.3),rgba(0,0,0,0.3));
+    font-size: 22px;
+    text-align: left;
+    color: violet;
+}
+
+.feed_dataDetail span{
+    color: white;
+}
+
+.feed_dataDetail p{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+}
+/* RatingPage Style */
+.rateFill{
+    color: orange;
+}
+
+.rateEmpty{
+    color: lightgray;
+}
+
+.strClr{
+    color: orange;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum | ViaPark</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body onload="loadUsername()">
+    <header>
+        <div class="head_nav">
+            <span><b>Via</b><i>Park</i></span>
+            <ul class="main_nav">
+                <li><a href="DashboardPage.html">DASHBOARD</a></li>
+                <li class="is_active"><a href="ForumPage.html">FORUM</a></li>
+                <li><a href="FeedbackPage.html">FEEDBACK</a></li>
+                <li><a href="RatingPage.html">RATING</a></li>
+                <li><a onclick="logout()">LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="forum_content">
+        <marquee id="usernameActive" style="text-align: left; margin-bottom: 5%; color: thistle;"></marquee>
+        <span>FORUM</span><br>
+        <span>Everyone is invited! The ViaPark forum are for everyone, new and advanced user alike!</span>
+        <div class="forum_add">
+            <label>Title :</label> <br>
+            <input type="text" id="tfForumTitle"> <br>
+            <label>Content :</label> <br>
+            <textarea id="taForumContent" cols="30" rows="8"></textarea>
+            <div style="text-align: right;">
+                <input type="button" value="ADD THREAD" onclick="val_insertThread()"> <br>
+                <div style="color: red;" id="errMsgFr"> &nbsp;</div>
+            </div>
+            <div id="forum_data">
+                <p style="text-align: center;" class="forum_dataDetail"> There are not thread yet :(</p>
+            </div>
+        </div>  
+    </div>
+    <footer>
+        <br>
+        &copy; 2020 DEVIA LIANY LTD. All Rights Reserved.
+        <br>
+        Terms of Service | Privacy Policy
+        <br> &nbsp;
+    </footer>
+</body>
+</html>
